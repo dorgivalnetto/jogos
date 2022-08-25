@@ -37,7 +37,7 @@ while(not enforcou and not acertou):
                     letras_certas[posicao] = letra
                     print("Encontrei a letra {} na posição {}".format(chute, posicao))
                     if letras_certas.count("_") == 0:
-                        print("Acertou! A palavra secreta é {}".format(palavra_secreta))
+                        print("Acertou A palavra secreta é {}".format(palavra_secreta))
                         acertou = True
                 posicao += 1
     else:
