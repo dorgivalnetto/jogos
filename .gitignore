@@ -1,0 +1,4 @@
+#ignorar todos os arquivos com extensão .txt
+
+#ignorar um arquivo específico
+arquivoignore.txt
