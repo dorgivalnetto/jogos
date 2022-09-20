@@ -126,3 +126,19 @@ meses = ("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "
 print(meses)
 print(meses[8])
 len(meses)
+
+#listas e tuplas juntas
+ponto1 = (3,5)
+ponto2 = (4,6)
+ponto3 = (7,8)
+grafico = [ponto1, ponto2, ponto3]
+print(grafico)
+
+#acessando uma parte da informação da tupla dentro da lista
+print(grafico[0])
+print(grafico[2][1])
+
+#set
+colecao = {11122233344, 22233344455, 33344455566}
+colecao.add(44455566677) #vai adicionar pois não existe ainda
+colecao.add(11122233344) #nao vai adicionar pois este CPF já existe!
