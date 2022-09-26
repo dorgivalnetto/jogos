@@ -32,7 +32,9 @@ def jogar():
 
 def imprime_abertura():
     print("***************************")
-    print("*****Bem-vindo ao Jogo ****")
+
+    print("*** Bem-vindo ao Jogo ***")
+
     print("***************************")
 
 
