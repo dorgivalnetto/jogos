@@ -122,7 +122,8 @@ print(lista_a)
 print(lista_a)
 
 #tuplas
-meses = ("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez")
+meses = ("Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
+         "Jul", "Ago", "Set", "Out", "Nov", "Dez")
 print(meses)
 print(meses[8])
 len(meses)
@@ -139,6 +140,57 @@ print(grafico[0])
 print(grafico[2][1])
 
 #set
+#Os sets são uma coleção de itens desordenada,
+# parcialmente imutável e que não podem conter elementos duplicado
 colecao = {11122233344, 22233344455, 33344455566}
+print("Set de CPF", colecao)
 colecao.add(44455566677) #vai adicionar pois não existe ainda
+print("Adicionando um elemento", colecao)
 colecao.add(11122233344) #nao vai adicionar pois este CPF já existe!
+print(colecao)
+
+meu_set = {1, 2, 3, 4, 1}
+print(meu_set)
+
+# Adicionando elementos
+meu_set.add(2)
+print("Adição", meu_set)
+
+# Atualizando set
+#meu_set.update(3, 4, 5, 6)
+#print("Atualição 1", meu_set)
+
+meu_set.update([3, 4, 5, 6])
+print("Atualição 2", meu_set)
+
+# Removendo elemento
+meu_set.discard(2)
+print("Remoção", meu_set)
+
+meu_set = {1, 2, 3, 4, 1}
+print(meu_set)
+meu_set_2 = set([1, 2, 8, 9, 10])
+print(meu_set_2)
+
+# União = todos os elementos dos dois sets serão “unidos” em um,
+# formando um único set com todos os elementos, sem repetí-los, claro.
+print("União")
+print(meu_set | meu_set_2)
+print(meu_set.union(meu_set_2))
+
+# Interseção = apenas os elementos que estiverem nos dois sets restarão.
+print("Interseção")
+print(meu_set & meu_set_2)
+print(meu_set.intersection(meu_set_2))
+
+# Diferença = restarão apenas os elementos que estiverem em
+# um dos set, mas não no segundo.
+print("Diferença")
+print(meu_set - meu_set_2)
+print(meu_set.difference(meu_set_2))
+
+# Diferença Simétrica = apenas os elementos que estiverem
+# nos dois sets, porém que não se repitam, serão exibidos.
+print("Diferença Simétrica")
+print(meu_set ^ meu_set_2)
+print(meu_set.symmetric_difference(meu_set_2))
